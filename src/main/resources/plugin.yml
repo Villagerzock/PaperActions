@@ -1,0 +1,7 @@
+name: PaperActions
+version: '${version}'
+main: net.villagerzock.PaperActionsPlugin
+description: PaperActions plugin with Folia-compatible scheduler usage.
+author: villagerzock
+api-version: '1.21.11'
+folia-supported: true

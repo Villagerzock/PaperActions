@@ -1,9 +1,9 @@
 package net.villagerzock;
 
-import org.bukkit.World;
-
+import java.util.LinkedHashMap;
 import java.util.Map;
 
-public interface Action {
+public interface IAction {
     void execute(Map<String, Object> context);
+    LinkedHashMap<String, Class<?>> getParameterTypes();
 }
