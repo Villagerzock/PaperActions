@@ -1,0 +1,4 @@
+name: PaperActions
+version: '${version}'
+main: net.villagerzock.BungeeActionsPlugin
+author: villagerzock
