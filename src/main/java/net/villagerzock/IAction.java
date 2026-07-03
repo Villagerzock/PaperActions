@@ -6,4 +6,5 @@ import java.util.Map;
 public interface IAction {
     void execute(Map<String, Object> context);
     LinkedHashMap<String, Class<?>> getParameterTypes();
+    String getDescription();
 }
