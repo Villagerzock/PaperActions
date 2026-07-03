@@ -47,7 +47,7 @@ public static void heal(Player player) {
 Execute actions using the `ActionManager`.
 
 ```java
-ActionManager.getInstance(plugin).dispatch(
+ActionManager.getInstance(plugin).executeAction(
 	"example:heal",
 	Map.of(
 		"player", player
