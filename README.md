@@ -121,17 +121,22 @@ Without `-parameters`, Java does not retain parameter names at runtime. In that 
 
 The conventions described above are **recommendations**, not requirements.
 
-Plugins are free to expose any parameter names they choose. However, following the recommended names greatly improves interoperability between plugins and allows automatic parameter injection.
+Action providers are free to expose any parameter names they choose. However, following the recommended names greatly improves interoperability between plugins and enables automatic parameter injection.
 
-If your plugin requires different parameter names, consider allowing server owners to configure parameter mappings, for example through a YAML configuration.
+Action executors should not assume that every action follows these conventions. If possible, they should allow server owners to provide additional parameters or remap parameter names through configuration.
+
+For example, a GUI plugin could allow actions to be configured like this:
 
 ```yaml
-actions:
-  myplugin:heal:
-    player: sender
+slots:
+  0:
+    action: myplugin:heal
+    parameters:
+      player: clicker
+      amount: 20
 ```
 
-In this example, the action expects a parameter named `player`, while the executing plugin provides a parameter named `sender`. The configuration maps one to the other, allowing both plugins to work together without either plugin needing to change its implementation.
+In this example, the GUI plugin provides the player who clicked the item as the `player` parameter and also supplies an additional `amount` parameter. This allows the same action to be reused in many different contexts without requiring hardcoded integrations between plugins.
 
 ---
 
