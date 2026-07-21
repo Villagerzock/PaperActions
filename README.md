@@ -1,4 +1,4 @@
-[![Latest Snapshot](https://repo.qouve.space/api/badge/latest/snapshots/net/villagerzock/PaperActions?name=PaperActions&prefix=v)](https://repo.qouve.space/#/snapshots/net/villagerzock)
+[![Latest Snapshot](https://repo.qouve.space/api/badge/latest/snapshots/net/villagerzock/PaperActions?color=FF6A00&name=PaperActions%20Snapshots&prefix=v)](https://repo.qouve.space/#/snapshots/net/villagerzock)
 # PaperActions
 
 PaperActions is a lightweight library for Paper that allows plugins to expose and execute actions in a standardized way.
