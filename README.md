@@ -1,3 +1,4 @@
+![Latest Version](https://repo.qouve.space/api/badge/latest/snapshots/net.villagerzock:PaperActions)
 # PaperActions
 
 PaperActions is a lightweight library for Paper that allows plugins to expose and execute actions in a standardized way.
